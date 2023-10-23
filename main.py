@@ -15,7 +15,6 @@ white = (255, 255, 255)
 red = (255 , 0, 0)
 black = (0 , 0 , 0)
 
-  
 
 def plot_snake(gameWindow, color, snk_list, snakes_size):
     for x,y in snk_list:
@@ -27,8 +26,6 @@ def text_screen(text,color,x,y):
     gameWindow.blit(screen_text, [x,y])
 
 def gameLoop():
-  
-
     # Game specific Variable
     exit_game = False
     game_over = False
@@ -48,7 +45,6 @@ def gameLoop():
     score = 0
 
     init_velocity = 5
-
 
     snk_list = []
     snk_length = 1
@@ -100,7 +96,6 @@ def gameLoop():
             gameWindow.fill(white)
             text_screen("Score :"+str(score *10), red, 5,5)
             pygame.draw.rect(gameWindow , red, [food_x , food_y, snakes_size, snakes_size])
-
 
             head = []
             head.append(snakes_x)
